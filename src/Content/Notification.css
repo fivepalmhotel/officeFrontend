@@ -1,0 +1,194 @@
+/* =========================================
+   NOTIFICATION
+   ========================================= */
+
+.notification {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 99999;
+
+  width: min(380px, calc(100vw - 32px));
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.15);
+
+  animation: notificationSlideIn 0.35s ease forwards;
+}
+
+
+/* =========================================
+   CONTENT
+   ========================================= */
+
+.notification-content {
+  display: flex;
+  align-items: center;
+
+  min-height: 68px;
+  padding: 12px 14px;
+
+  gap: 12px;
+}
+
+
+/* =========================================
+   ICON
+   ========================================= */
+
+.notification-icon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   MESSAGE
+   ========================================= */
+
+.notification-message {
+  flex: 1;
+
+  color: #1e293b;
+
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+   ========================================= */
+
+.notification-close {
+  width: 28px;
+  height: 28px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  color: #64748b;
+
+  font-size: 22px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  border-radius: 6px;
+
+  transition: all 0.2s ease;
+}
+
+.notification-close:hover {
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+
+/* =========================================
+   SUCCESS
+   ========================================= */
+
+.notification-success {
+  border-left: 4px solid #16a34a;
+}
+
+.notification-success .notification-icon {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+
+/* =========================================
+   ERROR
+   ========================================= */
+
+.notification-error {
+  border-left: 4px solid #dc2626;
+}
+
+.notification-error .notification-icon {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+
+/* =========================================
+   WARNING
+   ========================================= */
+
+.notification-warning {
+  border-left: 4px solid #d97706;
+}
+
+.notification-warning .notification-icon {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+
+/* =========================================
+   INFO
+   ========================================= */
+
+.notification-info {
+  border-left: 4px solid #2563eb;
+}
+
+.notification-info .notification-icon {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+
+/* =========================================
+   ANIMATION
+   ========================================= */
+
+@keyframes notificationSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 520px) {
+
+  .notification {
+    top: 15px;
+    right: 15px;
+
+    width: calc(100vw - 30px);
+  }
+}

@@ -1,0 +1,311 @@
+/* =========================================
+   STAFF LOGIN PAGE
+   ========================================= */
+
+.staff-login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.10), transparent 35%),
+    linear-gradient(135deg, #f8fafc 0%, #eef4f9 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   LOGIN CARD
+   ========================================= */
+
+.staff-login-card {
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 42px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.10);
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.staff-login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.staff-login-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #0f4c81;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.staff-login-header h1 {
+  margin: 0 0 8px;
+  color: #172033;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.staff-login-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.staff-login-form {
+  width: 100%;
+}
+
+.staff-input-group {
+  margin-bottom: 22px;
+}
+
+.staff-input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #263449;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   INPUT WRAPPER
+   ========================================= */
+
+.staff-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.staff-input-wrapper input {
+  width: 100%;
+  height: 52px;
+  padding: 0 70px 0 48px;
+  box-sizing: border-box;
+  border: 1px solid #d8dee8;
+  border-radius: 10px;
+  outline: none;
+  background: #ffffff;
+  color: #172033;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.staff-input-wrapper input::placeholder {
+  color: #9aa5b5;
+}
+
+.staff-input-wrapper input:hover {
+  border-color: #b8c2d1;
+}
+
+.staff-input-wrapper input:focus {
+  border-color: #0f4c81;
+  box-shadow: 0 0 0 3px rgba(15, 76, 129, 0.10);
+}
+
+
+/* =========================================
+   INPUT ICON
+   ========================================= */
+
+.staff-input-icon {
+  position: absolute;
+  left: 16px;
+  z-index: 2;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+
+/* =========================================
+   PASSWORD TOGGLE
+   ========================================= */
+
+.staff-password-toggle {
+  position: absolute;
+  right: 12px;
+  border: none;
+  background: transparent;
+  color: #0f4c81;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.staff-password-toggle:hover {
+  color: #0a355b;
+}
+
+
+/* =========================================
+   LOGIN OPTIONS
+   ========================================= */
+
+.staff-login-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 4px 0 24px;
+}
+
+.staff-remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.staff-remember input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: #0f4c81;
+}
+
+.staff-forgot-password {
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: #0f4c81;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.staff-forgot-password:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+   ========================================= */
+
+.staff-login-button {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 10px;
+  background: #0f4c81;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.staff-login-button:hover {
+  background: #0a3b66;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(15, 76, 129, 0.20);
+}
+
+.staff-login-button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.staff-login-footer {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid #edf0f4;
+  text-align: center;
+}
+
+.staff-login-footer p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+
+@media (max-width: 520px) {
+
+  .staff-login-page {
+    padding: 20px 15px;
+  }
+
+  .staff-login-card {
+    padding: 30px 22px;
+    border-radius: 16px;
+  }
+
+  .staff-login-header h1 {
+    font-size: 24px;
+  }
+
+  .staff-login-options {
+    align-items: flex-start;
+  }
+
+  .staff-forgot-password {
+    text-align: right;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 360px) {
+
+  .staff-login-card {
+    padding: 25px 18px;
+  }
+
+  .staff-login-options {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .staff-forgot-password {
+    align-self: flex-end;
+  }
+}
